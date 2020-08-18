@@ -1,0 +1,233 @@
+@font-face {
+    font-family: Exo2-Bold;
+    src: url(../fonts/Exo2-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Exo2-Regular;
+    src: url(../fonts/Exo2-Regular.ttf);
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+.lines-container {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.lines {
+    position: absolute;
+    z-index: -1;
+    height: 220%;
+    width: 220%;
+    margin-left: -66%;
+    margin-top: -40%;
+    animation-name: line;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes line {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+body {
+    background: #000;
+    color: #fff;
+    animation-name: lights;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'OpenSans';
+}
+
+.container {
+    margin: 0 11.5vw 10vh 11.5vw;
+}
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10vh calc(0.4vh + 0.4vw/0.7) calc(2vh + 2vw/0.7) calc(0.4vh + 0.4vw/0.7);
+    margin: 0 13px 0 13px;
+    font-size: calc(0.7vh + 0.7vw/0.7);
+}
+
+nav a span {
+    padding: 20px 0 20px 0;
+    border-top: .5px solid rgba(0,0,0,0);
+    border-bottom: .5px solid rgba(0,0,0,0);
+    transition: all .35s ease-in;
+}
+
+nav a span:hover {
+    padding: 2px 0 2px 0;
+    border-top: .5px solid rgba(255,255,255,1);
+    border-bottom: .5px solid rgba(255,255,255,1);
+}
+
+nav .nav-light {
+    background: linear-gradient(180deg, rgba(64,64,64,0.99) 0%, rgba(38,38,38,0) 100%);
+}
+
+.main-container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-top: 7.5vh;
+}
+
+.left-container .name {
+    font-size: calc(5.4vh + 5.4vw/0.7);
+    font-family: 'Exo2-Bold';
+    line-height: calc(5.4vh + 5.4vw/0.7);
+}
+
+.right-container {
+    margin-left: calc(7vh + 7vw*0.7);
+}
+
+.right-container p {
+    font-family: 'OpenSans';
+    font-size: calc(0.71vh + 0.71vw/0.7);
+    line-height: calc(1.1vh + 1.1vw/0.7);
+    text-align: left;
+}
+
+.right-container p  span{
+    background: linear-gradient(270deg, rgba(70,70,70,1) 0%, rgba(38,38,38,0.75) 100%);
+}
+
+.icon {
+    padding-right: calc(0.2vh + 0.2vw/0.7);
+}
+
+.info, .info-mobile {
+    margin-top: 5vh;
+}
+
+.info-mobile {
+    display: none;
+}
+
+.links, .location {
+    background: linear-gradient(90deg, rgba(64,64,64,0.99) 0%, rgba(38,38,38,0) 30%);
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: calc(0.71vh + 0.71vw/0.7);
+    margin-top: 2vh;
+    padding: calc(0.1vh + 0.1vw/0.7) 0 calc(0.1vh + 0.1vw/0.7) calc(0.8vh + 0.8vw/0.7);
+}
+
+.links a, .location a {
+    display: block;
+    text-decoration: none;
+    color: #bbb;
+    padding-right: calc(0.8vh + 0.8vw/0.7);
+    transition: color .3s ease-in;
+}
+
+.links a:hover, .location a:hover {
+    color: #fff;
+}
+
+footer {
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    font-size: calc(0.5vh + 0.5vw/0.7);
+    color: #555;
+    /*writing-mode: vertical-lr;
+    transform: rotate(180deg);*/
+}
+
+footer p span {
+    color: #aaa;
+}
+
+@media only screen and (max-width: 800px) {
+    .lines-container {
+        display: none;
+    }
+    
+    nav a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        padding: 60px 5px 0 5px;
+        margin: 0 13px 0 13px;
+        font-size: 16px;
+    }
+
+    nav a span {
+        padding: 0;
+        border-top: 0 solid rgba(0,0,0,0);
+        border-bottom: 0 solid rgba(0,0,0,0);
+        transition: none;
+    }
+
+    nav a span:hover {
+        padding: 0;
+        border-top: 0 solid rgba(255,255,255,1);
+        border-bottom: 0 solid rgba(255,255,255,1);
+    }
+    
+    .container {
+        margin: 0 7% 0 7%;
+    }
+
+    .info {
+        display: none;
+    }
+
+    .info-mobile {
+      display: block;
+      margin-top: 20px;
+    }
+
+    .main-container {
+        flex-flow: column nowrap;
+        align-items: flex-start;
+    }
+
+    .right-container {
+        margin: 0;
+    }
+
+    .name {
+        font-size: 80px !important;
+        line-height: 80px !important;
+    }
+
+    .right-container p {
+        font-size: 16px;
+        line-height: 25px;
+        margin-top: 20px;
+    }
+
+    .links, .location {
+        font-size: 14px;
+        margin-top: 10px;
+        padding: 1px 0 1px 10px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+  }
