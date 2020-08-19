@@ -270,6 +270,7 @@ nav .nav-light {
 }
 
 .side-box .personal-info-container {
+    position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 75px;
 }
