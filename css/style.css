@@ -83,15 +83,15 @@ nav a {
 
 nav a span {
     padding: 20px 0 20px 0;
-    border-top: .5px solid rgba(0,0,0,0);
-    border-bottom: .5px solid rgba(0,0,0,0);
-    transition: all .3s ease-in;
+    border-top:1px solid rgba(0,0,0,0);
+    border-bottom: 1px solid rgba(0,0,0,0);
+    transition: all 0.3s ease-in;
 }
 
 nav a span:hover {
     padding: 2px 0 2px 0;
-    border-top: .5px solid rgba(255,255,255,1);
-    border-bottom: .5px solid rgba(255,255,255,1);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-bottom: 1px solid rgba(255,255,255,0.5);
 }
 
 nav .nav-light {
