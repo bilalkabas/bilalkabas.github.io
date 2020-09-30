@@ -130,8 +130,8 @@ p {margin: 0;}
     z-index: -1;
 }
 
-.lc-mobile .mc .name {
-    padding-top: 25px;
+.lc-mobile .mc .info-c .name {
+    padding-top: 21px;
     font-size: 60px;
     font-family: 'Exo2-Bold';
     line-height: 55px;
@@ -144,7 +144,7 @@ p {margin: 0;}
 .lc-mobile .mc p {
     text-align: justify;
     font-size: 16px;
-    line-height: 25px;
+    line-height: 22px;
 }
 
 .lc-mobile .mc .line {
@@ -196,6 +196,7 @@ p {margin: 0;}
 
 .lc-mobile .mc .contact-c .uni{
     margin-bottom: 5px;
+    min-width: 250px;
 }
 
 .lc-mobile .mc .contact-c .btn {
