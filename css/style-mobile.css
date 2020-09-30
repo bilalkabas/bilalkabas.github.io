@@ -1,33 +1,3 @@
-@font-face {
-    font-family: Exo2-Bold;
-    src: url(../fonts/Exo2-ExtraBold.ttf);
-}
-
-@font-face {
-    font-family: Exo2-Regular;
-    src: url(../fonts/Exo2-Regular.ttf);
-}
-
-@font-face {
-    font-family: OpenSans;
-    src: url(../fonts/OpenSans-Regular.ttf);
-}
-
-body {
-    background: #000;
-    color: #fff;
-    animation-name: lights;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    font-family: 'OpenSans';
-}
-
-/* Defaults */
-p {margin: 0;}
-
 .lc-mobile {
     margin: 20px 15px;
 }
