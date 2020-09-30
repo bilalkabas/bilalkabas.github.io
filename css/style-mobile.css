@@ -249,16 +249,17 @@ p {margin: 0;}
 }
 
 .mobile .signature {
-    font-size: 13px;
-    color: #888;
-    letter-spacing: 3px;
+    font-size: 18px;
+    color: #bbb;
+    letter-spacing: 1px;
     text-align: center;
-    margin: 3px 0;
+    margin: 3px 0 7px 0;
+    font-family: Italianno;
 }
 
-.mobile .signature span {
-    color: #bbb !important;
-}
+/* .mobile .signature span {
+    color: #fff !important;
+} */
 
 /* @media only screen and (min-width: 400px) {
     .lc-mobile .mc .info-c {
