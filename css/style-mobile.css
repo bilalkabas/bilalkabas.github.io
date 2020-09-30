@@ -176,6 +176,8 @@ p {margin: 0;}
     border: solid 1px #fff;
     cursor: pointer;
     transition: all .3s ease-in;
+    text-decoration: none;
+    color: #fff;
 }
 
 .lc-mobile .mc .follow:hover {
