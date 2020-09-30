@@ -219,11 +219,11 @@
 }
 
 .mobile .signature {
-    font-size: 18px;
+    font-size: 20px;
     color: #bbb;
     letter-spacing: 1px;
     text-align: center;
-    margin: 3px 0 7px 0;
+    margin: 5px 0;
     font-family: Italianno;
 }
 
