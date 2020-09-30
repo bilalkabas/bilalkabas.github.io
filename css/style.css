@@ -130,7 +130,7 @@ p {
     padding-right: calc(0.2vh + 0.2vw/0.7);
 }
 
-.info, .info-mobile {
+.desktop .info, .info-mobile {
     margin-top: 5vh;
 }
 
@@ -207,7 +207,7 @@ p {
         margin: 0 7% 0 7%;
     }
 
-    .info {
+    .desktop .info {
         display: none;
     }
 
