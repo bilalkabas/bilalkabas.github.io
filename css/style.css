@@ -13,6 +13,11 @@
     src: url(../fonts/OpenSans-Regular.ttf);
 }
 
+@font-face {
+    font-family: Italianno;
+    src: url(../fonts/Italianno-Regular.ttf);
+}
+
 ul {
     font-size: inherit;
 }
