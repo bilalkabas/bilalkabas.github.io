@@ -236,7 +236,7 @@ p {margin: 0;}
     padding-left: 15px;
     color: #000;
     font-size: 15px;
-    border-bottom: solid 8px #000;
+    /* border-bottom: solid 8px #000; */
 }
 
 .mobile footer .links{
@@ -246,6 +246,18 @@ p {margin: 0;}
 .mobile footer a {
     text-decoration: none;
     color: #000;
+}
+
+.mobile .signature {
+    font-size: 13px;
+    color: #888;
+    letter-spacing: 3px;
+    text-align: center;
+    margin: 3px 0;
+}
+
+.mobile .signature span {
+    color: #bbb !important;
 }
 
 /* @media only screen and (min-width: 400px) {
