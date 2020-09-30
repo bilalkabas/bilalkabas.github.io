@@ -67,12 +67,12 @@ p {
     margin: 0 11.5vw 10vh 11.5vw;
 }
 
-nav {   
+.desktop nav {   
     display: flex;
     flex-flow: row nowrap;
 }
 
-nav a {
+.desktop nav a {
     display: block;
     text-decoration: none;
     color: #fff;
@@ -81,20 +81,20 @@ nav a {
     font-size: calc(0.7vh + 0.7vw/0.7);
 }
 
-nav a span {
+.desktop nav a span {
     padding: 20px 0 20px 0;
     border-top: .5px solid rgba(0,0,0,0);
     border-bottom: .5px solid rgba(0,0,0,0);
     transition: all .3s ease-in;
 }
 
-nav a span:hover {
+.desktop nav a span:hover {
     padding: 2px 0 2px 0;
     border-top: .5px solid rgba(255,255,255,1);
     border-bottom: .5px solid rgba(255,255,255,1);
 }
 
-nav .nav-light {
+.desktop nav .nav-light {
     background: linear-gradient(180deg, rgba(64,64,64,0.99) 0%, rgba(38,38,38,0) 100%);
 }
 
@@ -138,7 +138,7 @@ nav .nav-light {
     display: none;
 }
 
-.links, .location {
+.desktop .links, .location {
     background: linear-gradient(90deg, rgba(64,64,64,0.99) 0%, rgba(38,38,38,0) 30%);
     display: flex;
     flex-flow: row nowrap;
@@ -147,7 +147,7 @@ nav .nav-light {
     padding: calc(0.1vh + 0.1vw/0.7) 0 calc(0.1vh + 0.1vw/0.7) calc(0.8vh + 0.8vw/0.7);
 }
 
-.links a, .location a {
+.desktop .links a, .location a {
     display: block;
     text-decoration: none;
     color: #bbb;
@@ -181,7 +181,7 @@ nav .nav-light {
         display: none;
     }
     
-    nav a {
+    .desktop nav a {
         display: block;
         text-decoration: none;
         color: #fff;
@@ -190,14 +190,14 @@ nav .nav-light {
         font-size: 16px;
     }
 
-    nav a span {
+    .desktop nav a span {
         padding: 0;
         border-top: 0 solid rgba(0,0,0,0);
         border-bottom: 0 solid rgba(0,0,0,0);
         transition: none;
     }
 
-    nav a span:hover {
+    .desktop nav a span:hover {
         padding: 0;
         border-top: 0 solid rgba(255,255,255,1);
         border-bottom: 0 solid rgba(255,255,255,1);
@@ -236,7 +236,7 @@ nav .nav-light {
         margin-top: 20px;
     }
 
-    .links, .location {
+    .desktop .links, .location {
         font-size: 14px;
         margin-top: 10px;
         padding: 1px 0 1px 10px;
@@ -617,4 +617,18 @@ nav .nav-light {
         font-size: 15px;
         line-height: 21px;
     }
+}
+
+@media only screen and (max-width: 500px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block !important;
+    }
+}
+
+.mobile {
+    display: none;
 }

@@ -4,66 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-mobile.css">
     <script src="https://kit.fontawesome.com/fc68c03be3.js" crossorigin="anonymous"></script>
     <title>About me - Bilal Kabaş</title>
 </head>
 <body>
-    <div class=lines-container>
-        <svg class="lines" viewBox="0 0 70 70">
-            <polyline points="-100,-12 35,37 100,0"
-            style="fill:none;stroke:#ffff00;stroke-width:.03;" />
-            <polyline points="35,37 90,200"
-            style="fill:none;stroke:#ffff00;stroke-width:.03;" />
-        </svg>
-    </div>
 
-    <div class="launch-container">
-        <nav>
-            <a class="nav-light" href="index.html">About me</a>
-            <a href="pages/research.html"><span>Research & Projects</span></a>
-            <!-- <a href="#"><span>Blog</span></a> -->
-            <a href="#"><span>CV</span></a>
-            <a href="#"><span>Contact</span></a>
-        </nav>
+    <section class="mobile">
+        <div class="lc-mobile">
+            <nav class="mobile-nav">
+                <div class="topnav">
+                    <div class="active-c">
+                        <div class="active-sign">
+    
+                        </div>
+                        <a href="#home" class="active">About me</a>
+                    </div>
+                    <a class="icon-c" href="javascript:void(0);" onclick="togglenav()">
+                        <i id="menu-icon" class="fa fa-bars"></i>
+                        <i id="exit-icon" class="fas fa-times"></i>
+                    </a>
+                </div>
+    
+                <div id="mobile-nav-links">
+                    <a href="#contact">Research & Projects</a>
+                    <a href="#about">CV</a>
+                    <a href="#about">Contact</a>
+                </div>
+            </nav>
         
-        <section class="launch-main-container">
-            <div class="left-container">
-                <div class="name">Bilal<br>Kabaş</div>
-                <section class="info-mobile">
-                    <div class="location">
-                        <a href="https://www.google.com/maps/place/Abdullah+Gül+University/@38.737118,35.473534,15z/data=!4m2!3m1!1s0x0:0x9e5486f83ee76d46?sa=X&ved=2ahUKEwiUtpmo5qLrAhVGs4sKHQ68BowQ_BIwHnoECBEQCA"><i class="icon fas fa-map-marker-alt"></i>AGU, Kayseri, Turkey</a>
+            <div class="mc">
+                <center>
+                <div class="info-c">
+                    <div class="name">Bilal<br>Kabaş</div>
+                        <div class="line"></div>
+                        <div class="info">
+                            B.Sc. in Electrical-Electronics Eng.,<br>
+                            Undergraduate Robotics,<br>ML & DL Researcher
+                        </div>
+                        <a class="follow">See my work</a>
                     </div>
-                    <div class="links">
-                        <a href="mailto:bilal.kabas@agu.edu.tr"><i class="icon fas fa-envelope"></i>Email</a>
-                        <a href="https://github.com/bilalkabas"><i class="icon fab fa-github"></i>GitHub</a>
-                        <a href="https://www.linkedin.com/in/bilalkabas/"><i class="icon fab fa-linkedin"></i>LinkedIn</a>
-                        <a href="https://www.researchgate.net/profile/Bilal_Kabas"><i class="icon fab fa-researchgate"></i>ResearchGate</a>
+                </center>
+    
+                <div class="contact-c">
+                    <div>
+                        <div class="uni">
+                            <i class="fas fa-university"></i>
+                            Abdullah Gül University
+                        </div>
+                        <div>
+                            <i style="padding: 0 2px;" class="fas fa-map-marker-alt"></i>
+                            Kayseri, Turkey
+                        </div>
                     </div>
-                </section>
+                    <a class="btn" href="#contacts">Contact</a>
+                </div>
+    
+                <div class="sep"></div>
+    
+                <p>Hi, I am Bilal Kabaş. I am an undergraduate student at <span>Electrical-Electronics Engineering</span> Department, at Abdullah Gül University. I have a great enthusiasm towards <span>Robotics.</span>  My focus is to develop decision making algorithms for <span>autonomous robots.</span> Currently, I am studying ML & DL and woking on the development of an autonomous UAV capable of picking a load on a ground robot with high precision. The research is planned to be carried out in the Abdullah Gül University Robotics Laboratory.</p>
             </div>
-            <div class="right-container">
-                <p>Hi, I am Bilal Kabaş. I am an undergraduate student at <span>Electrical-Electronics Engineering</span> Department, at Abdullah Gül University. I have a great enthusiasm towards <span>Robotics.</span>  My focus is to develop decision making algorithms for <span>autonomous robots.</span> Currently, I am studying ML & DL and woking on the development of an autonomous UAV capable of picking a load on a ground robot with high precision.
-                </p>
-            </div>
-        </section>
-
-        <section class="info">
-            <div class="location">
-                <a href="https://www.google.com/maps/place/Abdullah+Gül+University/@38.737118,35.473534,15z/data=!4m2!3m1!1s0x0:0x9e5486f83ee76d46?sa=X&ved=2ahUKEwiUtpmo5qLrAhVGs4sKHQ68BowQ_BIwHnoECBEQCA"><i class="icon fas fa-map-marker-alt"></i>AGU, Kayseri, Turkey</a>
-            </div>
+        </div>
+    
+        <footer>
             <div class="links">
-                <a href="mailto:bilal.kabas@agu.edu.tr"><i class="icon fas fa-envelope"></i>Email</a>
-                <a href="https://github.com/bilalkabas"><i class="icon fab fa-github"></i>GitHub</a>
-                <a href="https://www.linkedin.com/in/bilalkabas/"><i class="icon fab fa-linkedin"></i>LinkedIn</a>
-                <a href="https://www.researchgate.net/profile/Bilal_Kabas"><i class="icon fab fa-researchgate"></i>ResearchGate</a>
+                <a href="mailto:bilal.kabas@agu.edu.tr">Email </a>|
+                <a href="https://github.com/bilalkabas"> GitHub </a>|
+                <a href="https://www.linkedin.com/in/bilalkabas/"> LinkedIn </a>|
+                <a href="https://www.researchgate.net/profile/Bilal_Kabas"> ResearchGate</a>
             </div>
-        </section>
+            <p> <strong> <span>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Bilal Kabaş.</span> </strong> All Rights Reserved.</p>
+        </footer>
+    </section>
 
-    </div>
-            <footer class="launch-footer">
-                <p> <span>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Bilal Kabaş.</span> All Rights Reserved.</p>
-            </footer>
+    <section class="desktop">
+        <div class=lines-container>
+            <svg class="lines" viewBox="0 0 70 70">
+                <polyline points="-100,-12 35,37 100,0"
+                style="fill:none;stroke:#ffff00;stroke-width:.03;" />
+                <polyline points="35,37 90,200"
+                style="fill:none;stroke:#ffff00;stroke-width:.03;" />
+            </svg>
+        </div>
+    
+        <div class="launch-container">
+            <nav>
+                <a class="nav-light" href="index.html">About me</a>
+                <a href="pages/research.html"><span>Research & Projects</span></a>
+                <!-- <a href="#"><span>Blog</span></a> -->
+                <a href="#"><span>CV</span></a>
+                <a href="#"><span>Contact</span></a>
+            </nav>
+            
+            <section class="launch-main-container">
+                <div class="left-container">
+                    <div class="name">Bilal<br>Kabaş</div>
+                    <section class="info-mobile">
+                        <div class="location">
+                            <a href="https://www.google.com/maps/place/Abdullah+Gül+University/@38.737118,35.473534,15z/data=!4m2!3m1!1s0x0:0x9e5486f83ee76d46?sa=X&ved=2ahUKEwiUtpmo5qLrAhVGs4sKHQ68BowQ_BIwHnoECBEQCA"><i class="icon fas fa-map-marker-alt"></i>AGU, Kayseri, Turkey</a>
+                        </div>
+                        <div class="links">
+                            <a href="mailto:bilal.kabas@agu.edu.tr"><i class="icon fas fa-envelope"></i>Email</a>
+                            <a href="https://github.com/bilalkabas"><i class="icon fab fa-github"></i>GitHub</a>
+                            <a href="https://www.linkedin.com/in/bilalkabas/"><i class="icon fab fa-linkedin"></i>LinkedIn</a>
+                            <a href="https://www.researchgate.net/profile/Bilal_Kabas"><i class="icon fab fa-researchgate"></i>ResearchGate</a>
+                        </div>
+                    </section>
+                </div>
+                <div class="right-container">
+                    <p>Hi, I am Bilal Kabaş. I am an undergraduate student at <span>Electrical-Electronics Engineering</span> Department, at Abdullah Gül University. I have a great enthusiasm towards <span>Robotics.</span>  My focus is to develop decision making algorithms for <span>autonomous robots.</span> Currently, I am studying ML & DL and woking on the development of an autonomous UAV capable of picking a load on a ground robot with high precision.
+                    </p>
+                </div>
+            </section>
+    
+            <section class="info">
+                <div class="location">
+                    <a href="https://www.google.com/maps/place/Abdullah+Gül+University/@38.737118,35.473534,15z/data=!4m2!3m1!1s0x0:0x9e5486f83ee76d46?sa=X&ved=2ahUKEwiUtpmo5qLrAhVGs4sKHQ68BowQ_BIwHnoECBEQCA"><i class="icon fas fa-map-marker-alt"></i>AGU, Kayseri, Turkey</a>
+                </div>
+                <div class="links">
+                    <a href="mailto:bilal.kabas@agu.edu.tr"><i class="icon fas fa-envelope"></i>Email</a>
+                    <a href="https://github.com/bilalkabas"><i class="icon fab fa-github"></i>GitHub</a>
+                    <a href="https://www.linkedin.com/in/bilalkabas/"><i class="icon fab fa-linkedin"></i>LinkedIn</a>
+                    <a href="https://www.researchgate.net/profile/Bilal_Kabas"><i class="icon fab fa-researchgate"></i>ResearchGate</a>
+                </div>
+            </section>
+    
+        </div>
+        <footer class="launch-footer">
+            <p> <span>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Bilal Kabaş.</span> All Rights Reserved.</p>
+        </footer>
+    </section>
         
-    <script src="/js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
