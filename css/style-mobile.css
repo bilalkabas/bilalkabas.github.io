@@ -152,6 +152,7 @@
     align-items: center;
     justify-content: center;
     flex-flow: column;
+    margin-bottom: 30px;
 }
 
 .lc-mobile .mc .info-c::after {
@@ -437,7 +438,7 @@
     }
 
     .mobile footer {
-        margin-top: 35px;
+        margin-top: 55px;
         font-size: 19px !important;
     }
 
