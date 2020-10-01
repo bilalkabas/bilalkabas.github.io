@@ -16,14 +16,11 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    /* padding-bottom: 7px;
-    margin-bottom: 7px; */
 }
 
 .mobile-nav .topnav .active-c {
     display: flex;
     flex-flow: row nowrap;
-    
 }
 
 .mobile-nav .topnav .active-c .active-sign {
@@ -248,6 +245,14 @@
 @media only screen and (min-width: 600px) {
     .lc-mobile {
         max-width: 550px;
+    }
+
+    .mobile-nav a {
+        font-size: 26px;
+    }
+
+    .mobile-nav .topnav .active-c .active-sign {
+        height: 26px;
     }
 
     .lc-mobile .mc {
