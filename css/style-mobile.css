@@ -4,6 +4,68 @@
     padding: 0 15px;
 }
 
+/* NAVIGATON BAR */
+
+/* Hide full navbar */
+.full-nav {
+    display: none;
+    padding: 45px 0 15px 0;
+    position: sticky;
+    top: -30px;
+    background-color: #000;
+    z-index: 1000;
+    transition: all .4s ease-in;
+}
+
+.nav-onscroll {
+    box-shadow: 0 1px 40px #3a89d5;
+}
+
+.full-nav .full-nav-links {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 590px;
+    margin: 0 auto;
+}
+
+.full-nav .full-nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+.full-nav .full-nav-links .link:after {    
+    bottom: -15px;
+    content: "";
+    display: block;
+    height: 5px;
+    position: absolute;
+    background: #3a9cd5;
+    transition: all .3s ease;
+    width: 0;
+  }
+
+.full-nav .full-nav-links .link:hover:after { 
+    width: 100%; 
+}
+
+.full-nav .full-nav-links .active {
+    /* background-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%); */
+    color: #000;
+    padding: 1px 12px;
+    border-radius: 100px;
+    font-weight: bold;
+    background-image: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);
+    transition: all .3s ease-in;
+}
+
+.full-nav .full-nav-links .active:hover {
+    opacity: .7;
+}
+
 .mobile-nav a {
     color: #fff;
     display: block;
@@ -247,7 +309,7 @@
 @media only screen and (min-width: 600px) {
     .lc-mobile {
         max-width: 550px;
-        margin-top: 40px !important;
+        margin-top: 40px;
     }
 
     .mobile-nav a {
@@ -270,6 +332,77 @@
     .lc-mobile .mc .info-c {
         width: 460px;
         height: 460px;
+    }
+
+    .lc-mobile .mc .name {
+        font-size: 110px !important;
+        line-height: 105px !important;
+    }
+
+    .lc-mobile .mc .line {
+        width: 100px;
+        height: 8px;
+        margin: 15px 0;
+    }
+
+    .lc-mobile .mc .info-c .info {
+        font-size: 19px !important;
+    }
+
+    .lc-mobile .mc .mywork {
+        margin-top: 13px;
+        width: 120px;
+        font-size: 18px;
+    }
+
+    .lc-mobile .mc .sep {
+        margin-bottom: 20px;    
+    }
+
+    .lc-mobile .mc p {
+        line-height: 26px;
+    }
+
+    .mobile footer {
+        margin-top: 35px;
+        font-size: 17.5px !important;
+    }
+
+    .mobile footer .links{
+        font-size: 16.5px;
+    }
+
+    .mobile footer .footer-c {
+        max-width: 550px;
+    }
+
+    .mobile .signature {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .lc-mobile {
+        max-width: 100%;
+        margin: 0 26px 0 26px; 
+    }
+
+    .mobile-nav, nav {
+        display: none;
+    }
+
+    .full-nav {
+        display: block;
+    }
+
+    .lc-mobile .mc {
+        font-size: 19px !important;
+    }
+
+    .lc-mobile .mc .info-c {
+        width: 460px;
+        height: 460px;
+        margin-top: 40px;
     }
 
     .lc-mobile .mc .name {
