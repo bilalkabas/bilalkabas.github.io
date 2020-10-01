@@ -73,6 +73,7 @@
 
 .lc-mobile .mc {
     margin-top: 30px;
+    font-size: 16px;
 }
 
 .lc-mobile .mc .sep {
@@ -133,7 +134,6 @@
 
 .lc-mobile .mc p {
     text-align: justify;
-    font-size: 16px;
     line-height: 22px;
 }
 
@@ -154,7 +154,7 @@
     background: linear-gradient(270deg, rgba(70,70,70,1) 0%, rgba(38,38,38,0.75) 100%);
 }
 
-.lc-mobile .mc .follow {
+.lc-mobile .mc .mywork {
     display: block;
     margin-top: 10px;
     width: 107px;
@@ -164,9 +164,10 @@
     transition: all .3s ease-in;
     text-decoration: none;
     color: #fff;
+    font-size: 16px;
 }
 
-.lc-mobile .mc .follow:hover {
+.lc-mobile .mc .mywork:hover {
     background-color: #fff;
     color: #000;
 }
@@ -200,11 +201,14 @@
 .mobile footer {
     background-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%);
     margin-top: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 15px;
+    padding: 10px 15px;
     color: #000;
     font-size: 15px;
+}
+
+.mobile footer .footer-c {
+    max-width: 480px;
+    margin: 0 auto;
 }
 
 .mobile footer .links{
@@ -242,17 +246,39 @@
 }
 
 @media only screen and (min-width: 600px) {
+    .lc-mobile {
+        max-width: 550px;
+    }
+
+    .lc-mobile .mc {
+        font-size: 18px;
+    }
+
     .lc-mobile .mc .info-c {
-        width: 340px;
-        height: 340px;
+        width: 450px;
+        height: 450px;
     }
 
     .lc-mobile .mc .name {
-        font-size: 75px !important;
-        line-height: 70px !important;
+        font-size: 110px !important;
+        line-height: 105px !important;
     }
 
     .lc-mobile .mc .info-c .info {
-        font-size: 16px !important;
+        font-size: 19px !important;
+    }
+
+    .lc-mobile .mc .mywork {
+        margin-top: 13px;
+        width: 120px;
+        font-size: 18px;
+    }
+
+    .lc-mobile .mc p {
+        line-height: 25px;
+    }
+
+    .mobile footer .footer-c {
+        max-width: 550px;
     }
 }
