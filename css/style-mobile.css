@@ -245,18 +245,24 @@
 @media only screen and (min-width: 600px) {
     .lc-mobile {
         max-width: 550px;
+        margin-top: 40px !important;
     }
 
     .mobile-nav a {
-        font-size: 26px;
+        font-size: 28px;
     }
 
     .mobile-nav .topnav .active-c .active-sign {
-        height: 26px;
+        height: 28px;
+    }
+
+    .mobile-nav .topnav .icon-c {
+        width: 45px;
+        height: 45px;
     }
 
     .lc-mobile .mc {
-        font-size: 18px;
+        font-size: 19px !important;
     }
 
     .lc-mobile .mc .info-c {
@@ -279,11 +285,24 @@
         font-size: 18px;
     }
 
+    .lc-mobile .mc .sep {
+        margin-bottom: 20px;    
+    }
+
     .lc-mobile .mc p {
-        line-height: 25px;
+        line-height: 26px;
+    }
+
+    .mobile footer {
+        margin-top: 35px;
+        font-size: 17.5px !important;
     }
 
     .mobile footer .footer-c {
         max-width: 550px;
+    }
+
+    .mobile .signature {
+        font-size: 26px;
     }
 }
