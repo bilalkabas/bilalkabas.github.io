@@ -19,3 +19,13 @@ function togglenav() {
 		exitIcon.style.display = "none";
     }
   }
+
+window.onscroll = function() {navchange()};
+
+function navchange() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("full-nav").className = "full-nav nav-onscroll";
+  } else {
+    document.getElementById("full-nav").className = "full-nav";
+  }
+}
