@@ -383,8 +383,8 @@
 
 @media only screen and (min-width: 768px) {
     .lc-mobile {
-        max-width: 100%;
-        margin: 0 26px 0 26px; 
+        max-width: 550px;
+        margin: 0 auto; 
     }
 
     .mobile-nav, nav {
@@ -402,7 +402,7 @@
     .lc-mobile .mc .info-c {
         width: 460px;
         height: 460px;
-        margin-top: 40px;
+        margin-top: 50px;
     }
 
     .lc-mobile .mc .name {
