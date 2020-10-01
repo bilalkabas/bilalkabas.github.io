@@ -3,8 +3,14 @@ function togglenav() {
     let el = document.getElementById("mobile-nav-links");
     let menuIcon = document.getElementById("menu-icon");
     let exitIcon = document.getElementById("exit-icon");
+    let width = window.innerWidth;
+
     if (el.style.height === "0px" || el.style.height === "") {
-		el.style.height = "103px";
+        if (width > 600) {
+            el.style.height = "148px";
+        } else {
+            el.style.height = "103px";
+        }
 		menuIcon.style.display = "none";
 		exitIcon.style.display = "block";
     } else {
