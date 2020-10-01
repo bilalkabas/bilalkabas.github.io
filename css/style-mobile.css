@@ -383,7 +383,7 @@
 
 @media only screen and (min-width: 768px) {
     .lc-mobile {
-        max-width: 550px;
+        max-width: 650px;
         margin: 0 auto; 
     }
 
@@ -396,51 +396,53 @@
     }
 
     .lc-mobile .mc {
-        font-size: 19px !important;
+        font-size: 21px !important;
     }
 
     .lc-mobile .mc .info-c {
-        width: 460px;
-        height: 460px;
+        width: 590px;
+        height: 590px;
         margin-top: 50px;
+        margin-bottom: 40px;
     }
 
     .lc-mobile .mc .name {
-        font-size: 110px !important;
-        line-height: 105px !important;
+        font-size: 140px !important;
+        line-height: 130px !important;
     }
 
     .lc-mobile .mc .line {
-        width: 100px;
-        height: 8px;
-        margin: 15px 0;
+        width: 150px;
+        height: 12px;
+        margin: 25px 0;
     }
 
     .lc-mobile .mc .info-c .info {
-        font-size: 19px !important;
+        font-size: 23px !important;
     }
 
     .lc-mobile .mc .mywork {
-        margin-top: 13px;
-        width: 120px;
-        font-size: 18px;
+        margin-top: 16px;
+        width: 150px;
+        padding: 2px 0;
+        font-size: 22px;
     }
 
     .lc-mobile .mc .sep {
-        margin-bottom: 20px;    
+        margin-bottom: 23px;    
     }
 
     .lc-mobile .mc p {
-        line-height: 26px;
+        line-height: 32px;
     }
 
     .mobile footer {
         margin-top: 35px;
-        font-size: 17.5px !important;
+        font-size: 19px !important;
     }
 
     .mobile footer .links{
-        font-size: 16.5px;
+        font-size: 18px;
     }
 
     .mobile footer .footer-c {
@@ -448,6 +450,6 @@
     }
 
     .mobile .signature {
-        font-size: 26px;
+        font-size: 28px;
     }
 }
