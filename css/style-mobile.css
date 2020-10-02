@@ -153,6 +153,8 @@
     justify-content: center;
     flex-flow: column;
     margin-bottom: 30px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .lc-mobile .mc .info-c::after {
@@ -243,10 +245,41 @@
     color: #ccc;
 }
 
+.lc-mobile .mc .contact-c .contact-info {
+    margin-top: 15px;
+}
+
+.lc-mobile .mc .contact-c .contact-info a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin: 3px 0;
+    /* background: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%); */
+    border-radius: 100px;
+}
+
+.lc-mobile .mc .contact-c .contact-info a .icon-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #000;
+}
 
 .lc-mobile .mc .contact-c .uni{
     margin-bottom: 5px;
     min-width: 250px;
+}
+
+.lc-mobile .mc .contact-c .contact-info {
+    display: none;
+    flex-flow: column;
 }
 
 .lc-mobile .mc .contact-c .btn {
@@ -447,10 +480,101 @@
     }
 
     .mobile footer .footer-c {
-        max-width: 550px;
+        max-width: 650px;
     }
 
     .mobile .signature {
         font-size: 28px;
     }
+}
+
+/* Desktop site */
+
+@media only screen and (min-width: 9000px) {
+    .lc-mobile {
+        max-width: 100vw;
+        margin: 0 auto; 
+    }
+
+    .lc-mobile .mc .info-c {
+        width: 550px;
+        height: 550px;
+        margin: 50px 100px 40px 0;
+    }
+
+    .lc-mobile .mc .name {
+        font-size: 125px !important;
+        line-height: 115px !important;
+    }
+
+    .lc-mobile .mc .line {
+        width: 150px;
+        height: 12px;
+        margin: 25px 0;
+    }
+
+    .lc-mobile .mc .info-c .info {
+        font-size: 23px !important;
+    }
+
+    .lc-mobile .mc .mywork {
+        margin-top: 16px;
+        width: 150px;
+        padding: 2px 0;
+        font-size: 22px;
+    }
+
+    .lc-mobile .mc .main-info {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Attention! */
+
+    .lc-mobile .mc .contact-c {
+        display: flex;
+        flex-flow: column;
+        justify-content: left;
+        align-items: flex-start;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        color: #ccc;
+        min-width: 300px;
+    }
+
+    .lc-mobile .mc .contact-c .contact-info {
+        display: flex;
+    }
+
+    .lc-mobile .mc .contact-c .btn {
+        display: none;
+    }
+
+    .lc-mobile .mc .sep {
+        margin-bottom: 23px;    
+    }
+
+    .lc-mobile .mc p {
+        line-height: 33px;
+    }
+
+    .mobile footer {
+        margin-top: 55px;
+        font-size: 19px !important;
+    }
+
+    .mobile footer .links{
+        font-size: 18px;
+    }
+
+    .mobile footer .footer-c {
+        max-width: 650px;
+    }
+
+    .mobile .signature {
+        font-size: 28px;
+    }
+
 }
