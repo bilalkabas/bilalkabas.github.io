@@ -132,7 +132,7 @@ p {
     background: linear-gradient(270deg, rgba(70,70,70,1) 0%, rgba(38,38,38,0.75) 100%);
 }
 
-.icon {
+.desktop .icon {
     padding-right: calc(0.2vh + 0.2vw/0.7);
 }
 
@@ -625,7 +625,7 @@ p {
     }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1600px) {
     .desktop {
         display: none;
     }
