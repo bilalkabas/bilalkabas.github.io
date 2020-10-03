@@ -254,6 +254,7 @@ p {
     display: none;
     height: 100%;
     width: 100%;
+    /* transform: scale(1.08); */
     border: solid 6px #1ebfff;
     border-radius: 50%;
     position: absolute;
@@ -271,7 +272,7 @@ p {
     }
     100% {
         transform: scale(1); 
-        opacity: 0.2;
+        opacity: 0.16;
     }
 }
 
@@ -335,41 +336,76 @@ p {
     color: #ccc;
 }
 
-.lc-mobile .mc .contact-c .contact-info {
+.lc-mobile .mc .contact-info {
     margin-top: 15px;
+    display: none;
+    flex-flow: column;
+    position: absolute;
+    top: 400px;
+    left: calc(50% + 264px);
 }
 
-.lc-mobile .mc .contact-c .contact-info a {
+.lc-mobile .mc .contact-info a {
     text-decoration: none;
     color: #fff;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    margin: 3px 0;
+    margin: 8px 0;
     /* background: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%); */
     border-radius: 100px;
 }
 
-.lc-mobile .mc .contact-c .contact-info a .icon-c {
+.lc-mobile .mc .contact-info a p {
+    /* opacity: 0; */
+    width: 0;
+    transition: all .3s ease-in;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #ccc;
+}
+
+.lc-mobile .mc .contact-info a:nth-child(1) { padding-left: 87px; }
+.lc-mobile .mc .contact-info a:nth-child(2) { padding-left: 85px; }
+.lc-mobile .mc .contact-info a:nth-child(3) { padding-left: 72px; }
+.lc-mobile .mc .contact-info a:nth-child(4) { padding-left: 44px; }
+
+.lc-mobile .mc .contact-info a .icon-c {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);
-    width: 35px;
-    height: 35px;
+    /* background: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%); */
+    /* background-color: #fff; */
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     margin-right: 10px;
-    color: #000;
+    color: #fff;
+    font-size: 27px;
+    border: solid 2px #fff;
+    box-sizing: border-box;
+    transition: all .3s ease-in;
+}
+
+.social-links:hover + .social-links-text{
+    /* opacity: 1 !important; */
+    width: 150px !important;
+}
+
+.social-links:hover {
+    background: #fff;
+    color: #000 !important;
+}
+
+.lc-mobile .mc .contact-info a .icon-c .cv {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
 }
 
 .lc-mobile .mc .contact-c .uni{
     margin-bottom: 5px;
     min-width: 250px;
-}
-
-.lc-mobile .mc .contact-c .contact-info {
-    display: none;
-    flex-flow: column;
 }
 
 .lc-mobile .mc .contact-c .btn {
@@ -637,6 +673,14 @@ p {
         width: 150px;
         padding: 2px 0;
         font-size: 22px;
+    }
+
+    .lc-mobile .mc .contact-info {
+        display: flex;
+    }
+
+    .lc-mobile .mc .contact-c .btn {
+        display: none;
     }
 
     .lc-mobile .mc .sep {
