@@ -31,7 +31,7 @@ p {
     margin: 0;
 }
 
-.lc-mobile {
+.lc {
     max-width: 480px;
     margin: 20px auto;
     padding: 0 15px;
@@ -163,19 +163,19 @@ p {
     width: 80%;
 }
 
-.lc-mobile .mc {
+.lc .mc {
     margin-top: 30px;
     font-size: 16px;
 }
 
-.lc-mobile .mc .sep {
+.lc .mc .sep {
     width: 50px;
     height: 5px;
     background-color: #ffff00;
     margin-bottom: 10px;
 }
 
-.lc-mobile .mc .info-c {
+.lc .mc .info-c {
     position: relative;
     width: 280px;
     height: 280px;
@@ -190,7 +190,7 @@ p {
     margin: 0 auto;
 }
 
-.lc-mobile .mc .info-c::after {
+.lc .mc .info-c::after {
     content: '';
     display: block;
     height: 103%;
@@ -226,39 +226,39 @@ p {
     z-index: -1;
 }
 
-.lc-mobile .mc .info-c .name {
+.lc .mc .info-c .name {
     font-size: 60px;
     font-family: 'Exo2-Bold';
     line-height: 55px;
 }
 
-.lc-mobile .mc .info-c .info {
+.lc .mc .info-c .info {
     font-size: 15px;
 }
 
-.lc-mobile .mc p {
+.lc .mc p {
     text-align: justify;
     line-height: 22px;
 }
 
-.lc-mobile .mc .line {
+.lc .mc .line {
     width: 80px;
     height: 5px;
     background-color: #ffff00;
     margin: 13px 0;
 }
 
-.lc-mobile .mc .info {
+.lc .mc .info {
     color: #ccc;
     font-style: italic;
 }
 
-.lc-mobile .mc p span {
+.lc .mc p span {
     padding: 0 3px;
     background: linear-gradient(270deg, rgba(70,70,70,1) 0%, rgba(38,38,38,0.75) 100%);
 }
 
-.lc-mobile .mc .mywork {
+.lc .mc .mywork {
     display: block;
     margin-top: 10px;
     width: 107px;
@@ -271,12 +271,12 @@ p {
     font-size: 16px;
 }
 
-.lc-mobile .mc .mywork:hover {
+.lc .mc .mywork:hover {
     background-color: #fff;
     color: #000;
 }
 
-.lc-mobile .mc .contact-c {
+.lc .mc .contact-c {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -286,7 +286,7 @@ p {
     color: #ccc;
 }
 
-.lc-mobile .mc .contact-info {
+.lc .mc .contact-info {
     margin-top: 15px;
     display: none;
     flex-flow: column;
@@ -295,7 +295,7 @@ p {
     left: calc(50% + 264px);
 }
 
-.lc-mobile .mc .contact-info a {
+.lc .mc .contact-info a {
     text-decoration: none;
     color: #fff;
     display: flex;
@@ -306,7 +306,7 @@ p {
     border-radius: 100px;
 }
 
-.lc-mobile .mc .contact-info a p {
+.lc .mc .contact-info a p {
     /* opacity: 0; */
     width: 0;
     transition: all .3s ease-in;
@@ -315,12 +315,12 @@ p {
     color: #ccc;
 }
 
-.lc-mobile .mc .contact-info a:nth-child(1) { padding-left: 87px; }
-.lc-mobile .mc .contact-info a:nth-child(2) { padding-left: 85px; }
-.lc-mobile .mc .contact-info a:nth-child(3) { padding-left: 72px; }
-.lc-mobile .mc .contact-info a:nth-child(4) { padding-left: 44px; }
+.lc .mc .contact-info a:nth-child(1) { padding-left: 87px; }
+.lc .mc .contact-info a:nth-child(2) { padding-left: 85px; }
+.lc .mc .contact-info a:nth-child(3) { padding-left: 72px; }
+.lc .mc .contact-info a:nth-child(4) { padding-left: 44px; }
 
-.lc-mobile .mc .contact-info a .icon-c {
+.lc .mc .contact-info a .icon-c {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -347,19 +347,19 @@ p {
     color: #000 !important;
 }
 
-.lc-mobile .mc .contact-info a .icon-c .cv {
+.lc .mc .contact-info a .icon-c .cv {
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
     letter-spacing: 1px;
 }
 
-.lc-mobile .mc .contact-c .uni{
+.lc .mc .contact-c .uni{
     margin-bottom: 5px;
     min-width: 250px;
 }
 
-.lc-mobile .mc .contact-c .btn {
+.lc .mc .contact-c .btn {
     display: block;
     color: #000 !important;
     background-color: #fff;
@@ -369,7 +369,7 @@ p {
     text-decoration: none;
 }
 
-.mobile footer {
+footer {
     background-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%);
     margin-top: 10px;
     padding: 10px 15px;
@@ -377,22 +377,22 @@ p {
     font-size: 15px;
 }
 
-.mobile footer .footer-c {
+footer .footer-c {
     max-width: 480px;
     margin: 0 auto;
 }
 
-.mobile footer .links{
+footer .links{
     margin-bottom: 5px;
     font-size: 14px;
 }
 
-.mobile footer a {
+footer a {
     text-decoration: none;
     color: #000;
 }
 
-.mobile .signature {
+.signature {
     font-size: 21px;
     color: #bbb;
     letter-spacing: 1px;
@@ -402,23 +402,23 @@ p {
 }
 
 @media only screen and (min-width: 420px) {
-    .lc-mobile .mc .info-c {
+    .lc .mc .info-c {
         width: 340px;
         height: 340px;
     }
 
-    .lc-mobile .mc .name {
+    .lc .mc .name {
         font-size: 75px !important;
         line-height: 70px !important;
     }
 
-    .lc-mobile .mc .info-c .info {
+    .lc .mc .info-c .info {
         font-size: 16px !important;
     }
 }
 
 @media only screen and (min-width: 600px) {
-    .lc-mobile {
+    .lc {
         max-width: 550px;
         margin-top: 40px;
     }
@@ -436,64 +436,64 @@ p {
         height: 45px;
     }
 
-    .lc-mobile .mc {
+    .lc .mc {
         font-size: 19px !important;
     }
 
-    .lc-mobile .mc .info-c {
+    .lc .mc .info-c {
         width: 460px;
         height: 460px;
     }
 
-    .lc-mobile .mc .name {
+    .lc .mc .name {
         font-size: 110px !important;
         line-height: 105px !important;
     }
 
-    .lc-mobile .mc .line {
+    .lc .mc .line {
         width: 100px;
         height: 8px;
         margin: 15px 0;
     }
 
-    .lc-mobile .mc .info-c .info {
+    .lc .mc .info-c .info {
         font-size: 19px !important;
     }
 
-    .lc-mobile .mc .mywork {
+    .lc .mc .mywork {
         margin-top: 13px;
         width: 120px;
         font-size: 18px;
     }
 
-    .lc-mobile .mc .sep {
+    .lc .mc .sep {
         margin-bottom: 20px;    
     }
 
-    .lc-mobile .mc p {
+    .lc .mc p {
         line-height: 26px;
     }
 
-    .mobile footer {
+    footer {
         margin-top: 35px;
         font-size: 17.5px !important;
     }
 
-    .mobile footer .links{
+    footer .links{
         font-size: 16.5px;
     }
 
-    .mobile footer .footer-c {
+    footer .footer-c {
         max-width: 550px;
     }
 
-    .mobile .signature {
+    signature {
         font-size: 26px;
     }
 }
 
 @media only screen and (min-width: 768px) {
-    .lc-mobile {
+    .lc {
         max-width: 650px;
         margin: 0 auto; 
     }
@@ -506,11 +506,11 @@ p {
         display: block;
     }
 
-    .lc-mobile .mc {
+    .lc .mc {
         font-size: 21px !important;
     }
 
-    .lc-mobile .mc .info-c {
+    .lc .mc .info-c {
         width: 590px;
         height: 590px;
         margin-top: 50px;
@@ -521,54 +521,54 @@ p {
         display: block;
     }
 
-    .lc-mobile .mc .info-c::before {
+    .lc .mc .info-c::before {
         display: block;
     }
 
-    .lc-mobile .mc .name {
+    .lc .mc .name {
         font-size: 140px !important;
         line-height: 130px !important;
     }
 
-    .lc-mobile .mc .line {
+    .lc .mc .line {
         width: 150px;
         height: 12px;
         margin: 25px 0;
     }
 
-    .lc-mobile .mc .info-c .info {
+    .lc .mc .info-c .info {
         font-size: 23px !important;
     }
 
-    .lc-mobile .mc .mywork {
+    .lc .mc .mywork {
         margin-top: 16px;
         width: 150px;
         padding: 2px 0;
         font-size: 22px;
     }
 
-    .lc-mobile .mc .sep {
+    .lc .mc .sep {
         margin-bottom: 23px;    
     }
 
-    .lc-mobile .mc p {
+    .lc .mc p {
         line-height: 33px;
     }
 
-    .mobile footer {
+    footer {
         margin-top: 55px;
         font-size: 19px !important;
     }
 
-    .mobile footer .links{
+    footer .links{
         font-size: 18px;
     }
 
-    .mobile footer .footer-c {
+    footer .footer-c {
         max-width: 650px;
     }
 
-    .mobile .signature {
+    .signature {
         font-size: 28px;
     }
 }
@@ -576,7 +576,7 @@ p {
 /* Desktop site */
 
 @media only screen and (min-width: 1200px) {
-    .lc-mobile {
+    .lc {
         max-width: 750px;
         margin: 0 auto; 
     }
@@ -589,11 +589,11 @@ p {
         display: block;
     }
 
-    .lc-mobile .mc {
+    .lc .mc {
         font-size: 21px !important;
     }
 
-    .lc-mobile .mc .info-c {
+    .lc .mc .info-c {
         width: 650px;
         height: 650px;
         margin-top: 50px;
@@ -604,62 +604,64 @@ p {
         display: block;
     }
 
-    .lc-mobile .mc .info-c::before {
+    .lc .mc .info-c::before {
         display: block;
     }
 
-    .lc-mobile .mc .name {
+    .lc .mc .name {
         font-size: 150px !important;
         line-height: 140px !important;
     }
 
-    .lc-mobile .mc .line {
+    .lc .mc .line {
         width: 150px;
         height: 12px;
         margin: 25px 0;
     }
 
-    .lc-mobile .mc .info-c .info {
+    .lc .mc .info-c .info {
         font-size: 23px !important;
     }
 
-    .lc-mobile .mc .mywork {
+    .lc .mc .mywork {
         margin-top: 16px;
         width: 150px;
         padding: 2px 0;
         font-size: 22px;
     }
 
-    .lc-mobile .mc .contact-info {
+    .lc .mc .contact-info {
         display: flex;
     }
 
-    .lc-mobile .mc .contact-c .btn {
+    .lc .mc .contact-c .btn {
         display: none;
     }
 
-    .lc-mobile .mc .sep {
+    .lc .mc .sep {
         margin-bottom: 23px;    
     }
 
-    .lc-mobile .mc p {
+    .lc .mc p {
         line-height: 33px;
     }
 
-    .mobile footer {
+    footer {
         margin-top: 55px;
         font-size: 19px !important;
+        background: rgb(58,207,213);
+        background: linear-gradient(90deg, rgba(58,207,213,0) 0%, rgba(58,186,213,1) 30%, rgba(58,104,213,1) 70%, rgba(58,78,213,0) 100%);
     }
 
-    .mobile footer .links{
+    footer .links{
         font-size: 18px;
     }
 
-    .mobile footer .footer-c {
+    footer .footer-c {
         max-width: 750px;
     }
 
-    .mobile .signature {
+    .signature {
         font-size: 28px;
     }
 }
