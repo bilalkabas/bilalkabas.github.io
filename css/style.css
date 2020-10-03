@@ -624,17 +624,3 @@ p {
         line-height: 21px;
     }
 }
-
-@media only screen and (max-width: 1600px) {
-    .desktop {
-        display: none;
-    }
-
-    .mobile {
-        display: block !important;
-    }
-}
-
-.mobile {
-    display: none;
-}
