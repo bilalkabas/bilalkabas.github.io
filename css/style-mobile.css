@@ -382,7 +382,7 @@ footer .footer-c {
     margin: 0 auto;
 }
 
-footer .links{
+footer .links {
     margin-bottom: 5px;
     font-size: 14px;
 }
@@ -390,6 +390,11 @@ footer .links{
 footer a {
     text-decoration: none;
     color: #000;
+    transition: all .2s ease-in;
+}
+
+footer a:hover {
+    color: #fff;
 }
 
 .signature {
