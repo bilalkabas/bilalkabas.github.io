@@ -219,61 +219,11 @@ p {
 }
 
 .focus {
+    display: none;
     position: absolute;
     height: 100%;
     width: 100vw;
     z-index: -1;
-}
-
-.focus i {
-    display: block;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-
-.focus i:nth-child(1)::after {animation-delay: 0s !important;}
-.focus i:nth-child(2)::after {animation-delay: -2s !important;}
-.focus i:nth-child(3)::after {animation-delay: -4s !important;}
-.focus i:nth-child(4)::after {animation-delay: -6s !important;}
-.focus i:nth-child(5)::after {animation-delay: -8s !important;}
-.focus i:nth-child(6)::after {animation-delay: -10s !important;}
-.focus i:nth-child(7)::after {animation-delay: -12s !important;}
-.focus i:nth-child(8)::after {animation-delay: -14s !important;}
-.focus i:nth-child(9)::after {animation-delay: -16s !important;}
-.focus i:nth-child(10)::after {animation-delay: -18s !important;}
-.focus i:nth-child(11)::after {animation-delay: -20s !important;}
-.focus i:nth-child(12)::after {animation-delay: -22s !important;}
-.focus i:nth-child(13)::after {animation-delay: -24s !important;}
-.focus i:nth-child(14)::after {animation-delay: -26s !important;}
-.focus i:nth-child(15)::after {animation-delay: -28s !important;}
-.focus i:nth-child(16)::after {animation-delay: -30s !important;}
-
-.focus i::after {
-    content: '';
-    display: none;
-    height: 100%;
-    width: 100%;
-    /* transform: scale(1.08); */
-    /* border: solid 6px #1ebfff; */
-    border-radius: 50%;
-    position: absolute;
-    opacity: 0.06;
-    bottom: 0;
-    z-index: -1;
-    /* animation: focus 10s infinite linear; */
-    /* -webkit-animation: focus 32s infinite ease-out; */
-    box-sizing: border-box;
-}
-
-@keyframes focus {
-    0% {
-        transform: scale(2.5);
-    }
-    100% {
-        transform: scale(1); 
-        opacity: 0.16;
-    }
 }
 
 .lc-mobile .mc .info-c .name {
@@ -645,7 +595,7 @@ p {
         margin-bottom: 40px;
     }
 
-    .focus i::after {
+    .focus {
         display: block;
     }
 
