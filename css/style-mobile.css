@@ -516,6 +516,10 @@ p {
         margin-bottom: 40px;
     }
 
+    .focus {
+        display: block;
+    }
+
     .lc-mobile .mc .info-c::before {
         display: block;
     }
