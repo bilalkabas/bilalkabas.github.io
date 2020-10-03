@@ -261,8 +261,8 @@ p {
     opacity: 0.06;
     bottom: 0;
     z-index: -1;
-    animation: focus 10s infinite linear;
-    -webkit-animation: focus 32s infinite ease-out;
+    /* animation: focus 10s infinite linear; */
+    /* -webkit-animation: focus 32s infinite ease-out; */
     box-sizing: border-box;
 }
 
