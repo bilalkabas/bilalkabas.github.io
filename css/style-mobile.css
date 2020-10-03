@@ -221,7 +221,7 @@ p {
 .focus {
     position: absolute;
     height: 100%;
-    width: 100%;
+    width: 100vw;
     z-index: -1;
 }
 
@@ -255,7 +255,7 @@ p {
     height: 100%;
     width: 100%;
     /* transform: scale(1.08); */
-    border: solid 6px #1ebfff;
+    /* border: solid 6px #1ebfff; */
     border-radius: 50%;
     position: absolute;
     opacity: 0.06;
