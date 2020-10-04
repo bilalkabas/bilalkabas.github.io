@@ -37,6 +37,13 @@ p {
     padding: 0 15px;
 }
 
+/* General */
+
+.bg-dark { background: #000 !important; }
+.bg-light { background: #eee !important; }
+.tx-dark { color: #000 !important; }
+.tx-light { color: #fff !important; }
+
 /* NAVIGATON BAR */
 
 /* Hide full navbar */
