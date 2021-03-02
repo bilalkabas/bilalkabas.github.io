@@ -358,7 +358,7 @@ p {
 }
 
 .main-flow .subject {
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     color: #fff;
     padding: 2px 12px;
 }
